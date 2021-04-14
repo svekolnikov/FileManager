@@ -6,4 +6,8 @@
     <ApplicationIcon></ApplicationIcon>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+
 </Project>

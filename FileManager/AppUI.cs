@@ -56,7 +56,7 @@ namespace FileManager
             {
                 var entry = _table.Page[i];
 
-                if      (entry.Type == TableEntityType.Directory)  Console.ForegroundColor = ConsoleColor.Green;
+                if      (entry.Type == TableEntityType.DIR)  Console.ForegroundColor = ConsoleColor.Green;
                 else if (entry.Type == TableEntityType.File) Console.ForegroundColor = ConsoleColor.Yellow;
                 
                 Console.SetCursorPosition(_x0 + _table.Columns[0].Left + 2, _yCont + i + 3); Console.Write(entry.Name);

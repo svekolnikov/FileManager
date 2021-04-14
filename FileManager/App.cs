@@ -126,6 +126,11 @@ namespace FileManager
                     _appUi.PrintInfo("Ошибка создания файла.");
                     AddToLogger(e.Message);
                 }
+                catch (Exception e)
+                {
+                    _appUi.PrintInfo("Неизвестная ошибка.");
+                    AddToLogger(e.Message);
+                }
 
                 GoToPath(AddSlash(parsedParams.DestPath), parsedParams.Page);
                 _appUi.Update();
@@ -244,8 +249,8 @@ namespace FileManager
                 {
                     Size = 0,
                     Name = di.Name,
-                    Extension = "<Directory>",
-                    Type = TableEntityType.Directory,
+                    Extension = "<DIR>",
+                    Type = TableEntityType.DIR,
                     DateCreated = di.CreationTime.ToString(CultureInfo.CurrentCulture)
                 });
             }

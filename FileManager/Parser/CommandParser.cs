@@ -181,6 +181,9 @@ namespace FileManager.Parser
                     _parsedParams.InitPath = _config.Path + data;
                     _parsedParams.Command = Commands.CreateDirectory;
                     break;
+                default:
+                    throw new WrongCmdException("");
+                    break;
             }
 
             return _parsedParams;

@@ -2,14 +2,14 @@
 {
     public enum TableEntityType
     {
-        Directory, 
+        DIR, 
         File
     }
 
     public class Row
     {
         /// <summary>
-        /// Directory or file name.
+        /// DIR or file name.
         /// </summary>
         public string Name { get; set; }
         /// <summary>
